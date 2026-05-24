@@ -135,11 +135,3 @@ This model makes predictions about loan applicants using financial and demograph
 - Jupyter Notebook
 
 ---
-
-## GitHub Submission Checklist
-- [x] Clean notebook with clear titles and explanations
-- [x] Dataset file uploaded to the repository
-- [x] README.md file included
-- [x] Notebook runs without errors
-- [x] Outputs are visible
-- [x] Responsible AI reflection is included
