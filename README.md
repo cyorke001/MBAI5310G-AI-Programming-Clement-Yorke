@@ -21,6 +21,31 @@ This repository contains my weekly coding assignments and final AI programming p
 
 ---
 
+## Repository Structure
+
+```
+MBAI5310G-AI-Programming-Clement-Yorke/
+├── Assignment_2/
+│   └── Assignment_2_Loan_Default.ipynb
+├── Assignment_3/
+│   └── Assignment_3_Loan_Default.ipynb
+├── Assignment_4/
+│   ├── Assignment_4_Evergreen.ipynb
+│   ├── Assignment_4_AdVantage_Growth_Studio.ipynb
+│   ├── Assignment_4_Evergreen_Bank_Report.docx
+│   ├── Assignment_4_AdVantage_Growth_Studio_Report.docx
+│   ├── evergreen_bank_credit_card_upgrade_dataset.xlsx
+│   ├── marketing_campaign_decision_tree_dataset.xlsx
+│   └── README.md
+├── Assignment_5/
+│   ├── Assignment_5_TalentWorks.ipynb
+│   ├── talentworks_employee_attrition_dataset.xlsx
+│   └── README.md
+└── README.md
+```
+
+---
+
 ## Assignment 2 — End-to-End Machine Learning Pipeline
 
 ### Project Overview
