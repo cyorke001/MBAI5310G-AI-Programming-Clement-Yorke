@@ -125,29 +125,6 @@ Evergreen Bank wants to predict which existing credit card customers are likely 
 - Target variable: `Accepted_Card_Upgrade` (Yes / No)
 - Features include: Credit_Utilization_Pct, Travel_Spend_Share_Pct, Avg_Monthly_Card_Spend, Credit_Score_Band, Customer_Satisfaction_Score, and more
 
-#### Main Steps
-| Step | Description |
-|------|-------------|
-| 1 | Understand the Business Problem |
-| 2 | Load and Inspect the Dataset |
-| 3 | Clean the Data |
-| 4 | Handle Missing Values |
-| 5 | Define Features and Target Variable |
-| 6 | One-Hot Encode Categorical Features |
-| 7 | Train/Test Split (80/20, stratified) |
-| 8 | Introduction to Decision Trees |
-| 9 | Train the Decision Tree Model |
-| 10 | Visualize the Decision Tree |
-| 11 | Training vs Testing Accuracy |
-| 12 | Confusion Matrix |
-| 13 | Precision, Recall, F1-Score |
-| 14 | Overfitting Analysis |
-| 15 | Control Complexity with max_depth=4 |
-| 16 | Feature Importance |
-| 17 | Business Interpretation |
-| 18 | Limitations and Responsible AI Reflection |
-| 19 | Final Conclusion |
-
 #### Results
 | Metric | Unconstrained Tree | max_depth=4 |
 |--------|--------------------|-------------|
@@ -172,28 +149,6 @@ AdVantage Growth Studio wants to predict which customers are likely to convert a
 - Target variable: `Converted` (Yes / No)
 - Features include: Loyalty_Score, Days_Since_Last_Purchase, Annual_Income, Social_Media_Engagement_Score, Previous_Purchases, and more
 
-#### Main Steps
-| Step | Description |
-|------|-------------|
-| 1 | Understand the Business Problem |
-| 2 | Load and Inspect the Dataset |
-| 3 | Clean the Data (remove 5 duplicates, fill missing values) |
-| 4 | Define Features and Target Variable |
-| 5 | One-Hot Encode Categorical Features |
-| 6 | Train/Test Split (80/20, stratified) |
-| 7 | Introduction to Decision Trees |
-| 8 | Train the Decision Tree Model |
-| 9 | Visualize the Decision Tree |
-| 10 | Training vs Testing Accuracy |
-| 11 | Confusion Matrix |
-| 12 | Precision, Recall, F1-Score |
-| 13 | Overfitting Analysis |
-| 14 | Control Complexity with max_depth=4 |
-| 15 | Feature Importance |
-| 16 | Business Interpretation |
-| 17 | Limitations and Responsible AI Reflection |
-| 18 | Final Conclusion |
-
 #### Results
 | Metric | Unconstrained Tree | max_depth=4 |
 |--------|--------------------|-------------|
@@ -205,18 +160,56 @@ AdVantage Growth Studio wants to predict which customers are likely to convert a
 
 **Top Predictors:** Loyalty_Score (19.4%), Days_Since_Last_Purchase (13.2%), Annual_Income (9.6%)
 
-### How to Run
-1. Place the dataset file in the same folder as the notebook
-2. Open the relevant `.ipynb` file
-3. Run all cells from top to bottom
-
-### Notes and Limitations
-Both models show severe overfitting without depth constraints. Applying `max_depth=4` significantly reduced the train/test gap. Both datasets are synthetic and small, limiting real-world applicability. Demographic features may introduce bias and require a fairness review before any real deployment.
-
 ### Responsible AI Reflection
 - **Fairness:** Demographic features such as income, age, and region may produce unequal targeting outcomes. Fairness audits are required before deployment.
 - **Transparency:** Decision Trees are interpretable — managers can follow the rules and explain predictions, supporting accountability.
-- **Human Oversight:** Model outputs should support human decision-making, not replace it. Eligibility checks and customer consent must be verified before acting on predictions.
+- **Human Oversight:** Model outputs should support human decision-making, not replace it.
+
+---
+
+## Assignment 5 — K-Means Clustering and Employee Segmentation
+
+### Project Overview
+This assignment applies K-Means clustering to discover natural employee segments within the TalentWorks People Analytics dataset. Results are interpreted from an HR retention perspective.
+
+### Dataset
+**TalentWorks Employee Attrition Dataset**
+- 286 records (280 after cleaning), 23 columns
+- Features include: Age, Monthly_Income, Tenure_Months, Job_Satisfaction, Work_Life_Balance, Engagement_Score, Performance_Rating, Commute_Time_Minutes, and more
+
+### Main Steps
+| Step | Description |
+|------|-------------|
+| 1 | Understand the Business Problem |
+| 2 | Load and Inspect the Dataset |
+| 3 | Clean the Data (remove 6 duplicates, fill missing values) |
+| 4 | Select 12 numerical features for clustering |
+| 5 | Scale features using StandardScaler |
+| 6 | Elbow Method to choose k |
+| 7 | Train K-Means model (k=3) |
+| 8 | Add cluster labels to dataset |
+| 9 | Analyze cluster characteristics |
+| 10 | Visualizations (Elbow, Scatter, Bar Chart, Box Plot) |
+| 11 | Business Interpretation |
+| 12 | Limitations and Responsible AI Reflection |
+| 13 | Final Conclusion |
+
+### Results
+| Cluster | Label | Size | Key Characteristics |
+|---------|-------|------|---------------------|
+| 0 | Strained Commuters | 108 | Longest commutes (70.69 min), lowest satisfaction and performance, highest attrition risk |
+| 1 | Experienced High Earners | 51 | Highest income ($6,595), longest tenure (81 months), best work-life balance |
+| 2 | High-Performing Locals | 121 | Shortest commutes (26.74 min), highest performance and training hours, lowest work-life balance |
+
+### Business Recommendation
+- **Cluster 0:** Offer remote work or flexible hours; provide manager check-ins and early career development support.
+- **Cluster 1:** Focus on recognition, succession planning, and knowledge transfer programs.
+- **Cluster 2:** Address work-life balance and compensation gaps; make promotion pathways visible.
+
+### How to Run
+1. Place `talentworks_employee_attrition_dataset.xlsx` in the same folder as the notebook
+2. Open `Assignment_5_TalentWorks.ipynb`
+3. Run all cells from top to bottom
 
 ---
 
@@ -226,4 +219,5 @@ Both models show severe overfitting without depth constraints. Applying `max_dep
 - numpy
 - scikit-learn
 - matplotlib
+- seaborn
 - Jupyter Notebook
