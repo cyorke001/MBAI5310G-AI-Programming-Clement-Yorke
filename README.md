@@ -7,36 +7,7 @@
 ---
 
 ## About This Repository
-This repository contains my weekly coding assignments and final AI programming project for MBAI 5310G - AI Programming.
-The repository will include Jupyter/Colab notebooks, code, outputs, README files, and documentation for reproducibility.
-
----
-
-## Repository Structure
-```
-MBAI5310G-AI-Programming-ClementYorke/
-│
-├── Assignment_2/
-│   ├── Assignment_2_Loan_Default.ipynb
-│   ├── finance_loan_default_dataset.xls
-│   └── outputs/
-│
-├── Assignment_3/
-│   ├── Assignment_3_Loan_Default.ipynb
-│   ├── finance_loan_default_dataset.xls
-│   └── outputs/
-│
-├── Assignment_4/
-│   ├── Assignment_4_Evergreen.ipynb
-│   ├── Assignment_4_AdVantage_Growth_Studio.ipynb
-│   ├── Assignment_4_Evergreen_Bank_Report.docx
-│   ├── Assignment_4_AdVantage_Growth_Studio_Report.docx
-│   ├── evergreen_bank_credit_card_upgrade_dataset.xlsx
-│   ├── marketing_campaign_decision_tree_dataset.xlsx
-│   └── README.md
-│
-└── README.md
-```
+This repository contains my weekly coding assignments and final AI programming project for MBAI 5310G - AI Programming. The repository includes Jupyter/Colab notebooks, code, outputs, README files, and documentation for reproducibility.
 
 ---
 
@@ -130,10 +101,9 @@ This project trains and compares two classification models — Logistic Regressi
 Both models are biased towards predicting No Default due to class imbalance. SVM performed better overall but still missed nearly half of actual defaults.
 
 ### Responsible AI Reflection
-This model makes predictions about loan applicants using financial and demographic data. There are important ethical considerations:
-- **Privacy:** The dataset contains sensitive financial information. In real projects, personal data should never be uploaded publicly to GitHub.
-- **Fairness:** The model should be checked to ensure it does not perform differently across groups such as age or employment status. Biased predictions could unfairly deny loans to creditworthy applicants.
-- **Human Judgment:** The model should be used as a decision-support tool only. A bank should not rely solely on a machine learning model to approve or reject loan applications — human review is essential for fairness and accountability.
+- **Privacy:** The dataset contains sensitive financial information. Personal data should never be uploaded publicly to GitHub.
+- **Fairness:** The model should be checked to ensure it does not perform differently across groups such as age or employment status.
+- **Human Judgment:** The model should be used as a decision-support tool only. Human review is essential for fairness and accountability.
 
 ---
 
@@ -147,7 +117,7 @@ This assignment builds and evaluates a Decision Tree classification model for tw
 ### Part 1 — Evergreen Bank: Credit Card Upgrade
 
 #### Business Problem
-Evergreen Bank wants to predict which existing credit card customers are likely to accept a premium card upgrade offer, so that marketing outreach can be targeted efficiently.
+Evergreen Bank wants to predict which existing credit card customers are likely to accept a premium card upgrade offer, so that marketing outreach can be targeted efficiently rather than sent to all customers.
 
 #### Dataset
 **Evergreen Bank Credit Card Upgrade Dataset**
@@ -168,7 +138,7 @@ Evergreen Bank wants to predict which existing credit card customers are likely 
 | 8 | Introduction to Decision Trees |
 | 9 | Train the Decision Tree Model |
 | 10 | Visualize the Decision Tree |
-| 11 | Evaluate — Training vs Testing Accuracy |
+| 11 | Training vs Testing Accuracy |
 | 12 | Confusion Matrix |
 | 13 | Precision, Recall, F1-Score |
 | 14 | Overfitting Analysis |
@@ -214,7 +184,7 @@ AdVantage Growth Studio wants to predict which customers are likely to convert a
 | 7 | Introduction to Decision Trees |
 | 8 | Train the Decision Tree Model |
 | 9 | Visualize the Decision Tree |
-| 10 | Evaluate — Training vs Testing Accuracy |
+| 10 | Training vs Testing Accuracy |
 | 11 | Confusion Matrix |
 | 12 | Precision, Recall, F1-Score |
 | 13 | Overfitting Analysis |
@@ -241,12 +211,12 @@ AdVantage Growth Studio wants to predict which customers are likely to convert a
 3. Run all cells from top to bottom
 
 ### Notes and Limitations
-Both models show severe overfitting without depth constraints. Applying `max_depth=4` significantly reduced the train/test gap in both cases. Both datasets are synthetic and small, limiting real-world applicability. Features like Income_Band, Age_Group, and Region may introduce demographic bias and require a fairness review before any real deployment.
+Both models show severe overfitting without depth constraints. Applying `max_depth=4` significantly reduced the train/test gap. Both datasets are synthetic and small, limiting real-world applicability. Demographic features may introduce bias and require a fairness review before any real deployment.
 
 ### Responsible AI Reflection
-- **Fairness:** Demographic features such as income, age, and region may produce unequal targeting outcomes across customer groups. Fairness audits are required before deployment.
-- **Transparency:** Decision Trees are interpretable — managers can follow the rules and explain predictions. This supports accountability in financial and marketing contexts.
-- **Human Oversight:** Model outputs should support human decision-making, not replace it. Eligibility checks, affordability assessments, and customer consent must be verified by humans before acting on model predictions.
+- **Fairness:** Demographic features such as income, age, and region may produce unequal targeting outcomes. Fairness audits are required before deployment.
+- **Transparency:** Decision Trees are interpretable — managers can follow the rules and explain predictions, supporting accountability.
+- **Human Oversight:** Model outputs should support human decision-making, not replace it. Eligibility checks and customer consent must be verified before acting on predictions.
 
 ---
 
