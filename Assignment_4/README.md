@@ -9,7 +9,7 @@
 
 ## Overview
 
-This assignment applies supervised machine learning: specifically Decision Tree classification: to two real-world business problems. Each part of the assignment is based on a separate business plan and dataset, and follows a consistent analytical workflow from raw data to business interpretation.
+This assignment applies supervised machine learning, specifically Decision Tree classification, to two real-world business problems. Each part of the assignment is based on a separate business plan and dataset, and follows a consistent analytical workflow from raw data to business interpretation.
 
 The goal is not only to build a working model, but to understand what the model is saying and translate its outputs into actionable business insights.
 
@@ -19,12 +19,15 @@ The goal is not only to build a working model, but to understand what the model 
 
 ```
 Assignment_4/
-├── Assignment_4_Evergreen.ipynb                    # Notebook: Evergreen Bank
-├── Assignment_4_AdVantage_Growth_Studio.ipynb      # Notebook: AdVantage Growth Studio
-├── Assignment_4_Evergreen_Bank_Report.pdf          # Full report: Evergreen Bank
-├── Assignment_4_AdVantage_Growth_Studio_Report.pdf # Full report: AdVantage Growth Studio
-├── evergreen_bank_credit_card_upgrade_dataset.xlsx # Dataset: Evergreen Bank
-├── marketing_campaign_decision_tree_dataset.xlsx   # Dataset: AdVantage Growth Studio
+├── notebooks/
+│   ├── Assignment_4_Evergreen_Bank.ipynb               # Notebook: Evergreen Bank
+│   └── Assignment_4_AdVantage_Growth_Studio.ipynb      # Notebook: AdVantage Growth Studio
+├── reports/
+│   ├── Assignment_4_Evergreen_Bank_Report.pdf          # Full report: Evergreen Bank
+│   └── Assignment_4_AdVantage_Growth_Studio_Report.pdf # Full report: AdVantage Growth Studio
+├── data/
+│   ├── evergreen_bank_credit_card_upgrade_dataset.xlsx # Dataset: Evergreen Bank
+│   └── marketing_campaign_decision_tree_dataset.xlsx   # Dataset: AdVantage Growth Studio
 └── README.md
 ```
 
@@ -91,15 +94,15 @@ Discuss model limitations, potential bias in features like `Income_Band` and `Re
 
 | Metric | Unconstrained Model | max_depth=4 |
 |--------|-------------------|-------------|
-| Training Accuracy | 100.0% |: |
+| Training Accuracy | 100.0% | — |
 | Testing Accuracy | 63.2% | **69.1%** |
-| Precision (Yes) | 51.9% |: |
-| Recall (Yes) | 53.8% |: |
-| F1-Score (Yes) | 52.8% |: |
-| False Positives | 13 |: |
-| False Negatives | 12 |: |
+| Precision (Yes) | 51.9% | — |
+| Recall (Yes) | 53.8% | — |
+| F1-Score (Yes) | 52.8% | — |
+| False Positives | 13 | — |
+| False Negatives | 12 | — |
 
-**Train/test gap (unconstrained):** ~36.8 percentage points: severe overfitting.
+**Train/test gap (unconstrained):** ~36.8 percentage points — severe overfitting.
 **Gap with max_depth=4:** reduced to ~30.9 points.
 
 ### Top Predictors
@@ -145,15 +148,15 @@ Follows the same 11-step structure as Part 1, with the following differences:
 
 | Metric | Unconstrained Model | max_depth=4 |
 |--------|-------------------|-------------|
-| Training Accuracy | 100.0% |: |
+| Training Accuracy | 100.0% | — |
 | Testing Accuracy | 62.3% | **66.7%** |
-| Precision (Yes) | 62.0% |: |
-| Recall (Yes) | 58.2% |: |
-| F1-Score (Yes) | 60.0% |: |
-| False Positives | 20 |: |
-| False Negatives | 23 |: |
+| Precision (Yes) | 62.0% | — |
+| Recall (Yes) | 58.2% | — |
+| F1-Score (Yes) | 60.0% | — |
+| False Positives | 20 | — |
+| False Negatives | 23 | — |
 
-**Train/test gap (unconstrained):** ~37.7 percentage points: severe overfitting.
+**Train/test gap (unconstrained):** ~37.7 percentage points — severe overfitting.
 **Gap with max_depth=4:** reduced to ~33.3 points.
 
 ### Top Predictors
@@ -207,12 +210,12 @@ jupyter notebook
 ```
 
 3. Open either notebook:
-   - `Assignment_4_Evergreen.ipynb`
-   - `Assignment_4_AdVantage_Growth_Studio.ipynb`
+   - `notebooks/Assignment_4_Evergreen_Bank.ipynb`
+   - `notebooks/Assignment_4_AdVantage_Growth_Studio.ipynb`
 
-4. Run all cells in order from top to bottom (`Kernel → Restart & Run All`).
+4. Run all cells in order from top to bottom (`Kernel -> Restart & Run All`).
 
-Both notebooks are fully self-contained. All data files are included in the same folder.
+Data files are in the `data/` subfolder and are referenced in the notebooks using relative paths (`../data/filename`).
 
 ---
 
@@ -230,5 +233,5 @@ However, both datasets are synthetic and small. Features such as `Income_Band`, 
 
 Full written reports with business context, model output interpretation, feature analysis, and responsible AI discussion are available as PDF files in this folder:
 
-- `Assignment_4_Evergreen_Bank_Report.pdf`
-- `Assignment_4_AdVantage_Growth_Studio_Report.pdf`
+- `reports/Assignment_4_Evergreen_Bank_Report.pdf`
+- `reports/Assignment_4_AdVantage_Growth_Studio_Report.pdf`
