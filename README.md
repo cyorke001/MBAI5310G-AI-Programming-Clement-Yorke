@@ -10,7 +10,7 @@
 
 ## Repository Overview
 
-This repository contains all coding assignments for MBAI 5310G. Each assignment folder includes a Jupyter notebook, dataset, written report, and its own detailed README.
+This repository contains all coding assignments for MBAI 5310G. Each assignment folder is organised into subfolders (notebooks, data, reports) and includes its own detailed README.
 
 ---
 
@@ -18,10 +18,42 @@ This repository contains all coding assignments for MBAI 5310G. Each assignment 
 
 ```
 MBAI5310G-AI-Programming-Clement-Yorke/
-├── Assignment_2/         — End-to-End ML Pipeline (Logistic Regression)
-├── Assignment_3/         — Classification Model Comparison (LR vs SVM)
-├── Assignment_4/         — Decision Tree Model and Business Interpretation
-├── Assignment_5/         — K-Means Clustering and Employee Segmentation
+├── Assignment_2/                                       # End-to-End ML Pipeline (Logistic Regression)
+│   ├── notebooks/
+│   │   └── Assignment_2_Loan_Default.ipynb
+│   ├── data/
+│   │   ├── finance_loan_default_dataset.xls
+│   │   ├── cleaned_loan_default_dataset.csv
+│   │   └── classification_outputs.csv
+│   └── README.md
+├── Assignment_3/                                       # Classification Model Comparison (LR vs SVM)
+│   ├── notebooks/
+│   │   └── Assignment_3_Loan_Default.ipynb
+│   ├── data/
+│   │   ├── finance_loan_default_dataset.xls
+│   │   ├── cleaned_loan_default_dataset.csv
+│   │   ├── classification_outputs.csv
+│   │   └── model_comparison_results.csv
+│   └── README.md
+├── Assignment_4/                                       # Decision Tree Model and Business Interpretation
+│   ├── notebooks/
+│   │   ├── Assignment_4_Evergreen_Bank.ipynb
+│   │   └── Assignment_4_AdVantage_Growth_Studio.ipynb
+│   ├── reports/
+│   │   ├── Assignment_4_Evergreen_Bank_Report.pdf
+│   │   └── Assignment_4_AdVantage_Growth_Studio_Report.pdf
+│   ├── data/
+│   │   ├── evergreen_bank_credit_card_upgrade_dataset.xlsx
+│   │   └── marketing_campaign_decision_tree_dataset.xlsx
+│   └── README.md
+├── Assignment_5/                                       # K-Means Clustering and Employee Segmentation
+│   ├── notebooks/
+│   │   └── Assignment_5_TalentWorks.ipynb
+│   ├── reports/
+│   │   └── Assignment_5_TalentWorks_Report.pdf
+│   ├── data/
+│   │   └── talentworks_employee_attrition_dataset.xlsx
+│   └── README.md
 └── README.md
 ```
 
