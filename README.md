@@ -54,6 +54,14 @@ MBAI5310G-AI-Programming-Clement-Yorke/
 │   ├── data/
 │   │   └── talentworks_employee_attrition_dataset.xlsx
 │   └── README.md
+├── Assignment_6/                                       # Model Evaluation, Explainability, and Fairness
+│   ├── notebooks/
+│   │   └── Assignment6_Event_Attendance.ipynb
+│   ├── reports/
+│   │   └── Assignment6_Event_Attendance_Report.docx
+│   ├── data/
+│   │   └── event_registration_attendance_dataset.csv
+│   └── README.md
 └── README.md
 ```
 
@@ -67,6 +75,7 @@ MBAI5310G-AI-Programming-Clement-Yorke/
 | 3 | Model Comparison | Logistic Regression vs SVM | Finance Loan Default (356 records) |
 | 4 | Credit Card Upgrade + Campaign Conversion | Decision Tree | Evergreen Bank (340) + AdVantage (600) |
 | 5 | Employee Segmentation | K-Means Clustering (k=3) | TalentWorks Attrition (286 records) |
+| 6 | Model Evaluation, Explainability & Fairness | Decision Tree + SHAP + LIME | Event Registration & Attendance (380 records) |
 
 See each assignment folder's README for full details on the business problem, dataset, methodology, results, and how to run the notebook.
 
@@ -74,4 +83,4 @@ See each assignment folder's README for full details on the business problem, da
 
 ## Tools and Libraries
 
-Python 3, pandas, numpy, scikit-learn, matplotlib, seaborn, Jupyter Notebook, openpyxl
+Python 3, pandas, numpy, scikit-learn, matplotlib, seaborn, shap, lime, Jupyter Notebook, openpyxl
