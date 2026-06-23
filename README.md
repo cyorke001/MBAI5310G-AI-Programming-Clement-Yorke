@@ -62,6 +62,26 @@ MBAI5310G-AI-Programming-Clement-Yorke/
 │   ├── data/
 │   │   └── event_registration_attendance_dataset.csv
 │   └── README.md
+├── Assignment_7/                                       # Neural Networks (TensorFlow/Keras)
+│   ├── reports/
+│   │   └── Assignment7_Clement_Yorke.pdf
+│   └── README.md
+├── Assignment_8/                                       # NLP Pipeline and Text Classification
+│   ├── notebooks/
+│   │   └── Assignment_8_NLP_Pipeline.ipynb
+│   ├── reports/
+│   │   ├── Assignment_8_NLP_Pipeline_Report.docx
+│   │   └── Assignment_8_NLP_Pipeline_Report.pdf
+│   ├── data/
+│   │   └── NLP_Dataset_2.xlsx
+│   └── README.md
+├── Finals/                                             # Final Presentations and Research Proposal
+│   ├── presentations/
+│   │   ├── quayci_final_presentation.pptx
+│   │   └── quayci_startup_presentation.pptx
+│   ├── proposal/
+│   │   └── Second_Hand_Intelligence_Research_Plan.pdf
+│   └── README.md
 └── README.md
 ```
 
@@ -76,6 +96,8 @@ MBAI5310G-AI-Programming-Clement-Yorke/
 | 4 | Credit Card Upgrade + Campaign Conversion | Decision Tree | Evergreen Bank (340) + AdVantage (600) |
 | 5 | Employee Segmentation | K-Means Clustering (k=3) | TalentWorks Attrition (286 records) |
 | 6 | Model Evaluation, Explainability & Fairness | Decision Tree + SHAP + LIME | Event Registration & Attendance (380 records) |
+| 7 | Neural Networks | TensorFlow / Keras | Customer Churn |
+| 8 | NLP Pipeline & Text Classification | TF-IDF + Logistic Regression | NorthStar Telecom Support Tickets (120 records) |
 
 See each assignment folder's README for full details on the business problem, dataset, methodology, results, and how to run the notebook.
 
@@ -83,4 +105,4 @@ See each assignment folder's README for full details on the business problem, da
 
 ## Tools and Libraries
 
-Python 3, pandas, numpy, scikit-learn, matplotlib, seaborn, shap, lime, Jupyter Notebook, openpyxl
+Python 3, pandas, numpy, scikit-learn, matplotlib, seaborn, shap, lime, nltk, TensorFlow, Keras, Jupyter Notebook, openpyxl
