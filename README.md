@@ -77,9 +77,8 @@ MBAI5310G-AI-Programming-Clement-Yorke/
 │   ├── presentations/
 │   │   ├── quayci_final_presentation.pptx
 │   │   └── quayci_startup_presentation.pptx
-│   ├── proposal/
-│   │   └── Second_Hand_Intelligence_Research_Plan.pdf
-│   └── README.md
+│   └── proposal/
+│       └── Second_Hand_Intelligence_Research_Plan.pdf
 └── README.md
 ```
 
