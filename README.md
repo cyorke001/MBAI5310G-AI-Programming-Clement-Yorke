@@ -63,9 +63,7 @@ MBAI5310G-AI-Programming-Clement-Yorke/
 │   │   └── event_registration_attendance_dataset.csv
 │   └── README.md
 ├── Assignment_7/                                       # Neural Networks (TensorFlow/Keras)
-│   ├── reports/
-│   │   └── Assignment7_Clement_Yorke.pdf
-│   └── README.md
+│   └── Assignment7_Clement_Yorke.pdf
 ├── Assignment_8/                                       # NLP Pipeline and Text Classification
 │   ├── notebooks/
 │   │   └── Assignment_8_NLP_Pipeline.ipynb
